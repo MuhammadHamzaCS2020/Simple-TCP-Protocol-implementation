@@ -1,0 +1,10 @@
+file2
+You are provided with a very simple file transfer protocol. You are required to implement this protocol
+using any language of your choice.
+This protocol has two entities, Server and Client. Both – the Server and the Client – are implemented
+using UDP.
+Server is a multithreaded server which hosts number of files in a directory. A client can get the list of all
+the hosted files and download any of these files.
+If client requests to download a non-existent files, client gets a message that file is not available.
+When client requests a valid file, the server first responds with metadata about the file and then sends the actual 
+file in packets containing at most 100 bytes of a file.
